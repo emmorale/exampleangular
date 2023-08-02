@@ -14,7 +14,7 @@ WORKDIR /usr/src/app
 COPY --from=build /usr/src/app/dist/hello-angular ./dist/hello-angular
 COPY server ./server
 
-EXPOSE 80
+EXPOSE 8080
 
 # Install express to serve the application
 RUN npm install express
